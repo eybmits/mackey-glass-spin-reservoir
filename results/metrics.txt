@@ -1,0 +1,21 @@
+Mackey-Glass quantum spin reservoir results
+
+One-step QRC RMSE, normalized scale:       0.005254
+One-step QRC RMSE, original scale:         0.001240
+Short free-run QRC RMSE, normalized scale: 0.077236
+Short free-run QRC RMSE, original scale:   0.018229
+Memoryless one-step baseline RMSE:         0.146814
+
+Reservoir:
+- 5 qubits
+- 7 virtual measurement nodes per input
+- density-matrix state rho with shape (32, 32)
+
+Plot saved to:
+/Users/superposition/Documents/Codex/2026-06-30/cna/outputs/mackey_glass_spin_reservoir/results/mackey_glass_qrc_prediction.png
+
+Notes:
+- The reservoir is a quantum spin system.
+- The trained model is only the final linear readout.
+- The quantum density matrix rho is the model memory.
+- rho is never reset inside the time loop.
