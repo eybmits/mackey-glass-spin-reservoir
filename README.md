@@ -22,8 +22,21 @@ contains memory of the recent input history.
 ## Files
 
 - `mackey_glass_spin_reservoir.py` - the full example, written to be read top to bottom
+- `STUDENT_GUIDE.md` - a short plain-language walkthrough for first reading
 - `requirements.txt` - minimal Python dependencies
 - `results/` - created automatically when the script is run
+
+## Suggested Reading Order
+
+1. Read `STUDENT_GUIDE.md`.
+2. Run `python mackey_glass_spin_reservoir.py`.
+3. Open `results/mackey_glass_qrc_prediction.png`.
+4. Read only these parts of the Python file first:
+   - `make_mackey_glass`
+   - `QuantumSpinReservoir.inject_input`
+   - `QuantumSpinReservoir.evolve_and_measure`
+   - `train_qrc`
+   - `predict_one_step`
 
 ## Quick Start
 
@@ -107,4 +120,3 @@ eventually drift even when one-step prediction is very accurate.
 - `RIDGE` regularizes the final linear readout.
 - The memoryless baseline is much worse because it only sees the current value,
   not the quantum reservoir state.
-
